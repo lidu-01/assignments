@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+void displayMenu();
+int getUserChoice();
+void handleChoice(int choice);
+
+int main() {
+    int choice;
+
+    do {
+        displayMenu();
+        choice = getUserChoice();
+        handleChoice(choice);
+    } while (choice != 4);  
+
+    return 0;
+}

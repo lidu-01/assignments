@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    char confirm;
+
+    cout << "1. Add Item\n";
+    cout << "2. Remove Item\n";
+    cout << "3. View Inventory\n";
+    cout << "4. Exit\n";
+    cout << "Enter your choice (1-4): ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            cout << "You chose to Add Item.\n";
+            cout << "Are you sure? (y/n): ";
+            cin >> confirm;
+            if (confirm == 'y' || confirm == 'Y') {
+                cout << "Item added successfully.\n";
+            } else {
+                cout << "Add cancelled.\n";
+            }
+            break;
+
+        case 2:
+            cout << "You chose to Remove Item.\n";
+            cout << "Are you sure? (y/n): ";
+            cin >> confirm;
+            if (confirm == 'y' || confirm == 'Y') {
+                cout << "Item removed successfully.\n";
+            } else {
+                cout << "Remove cancelled.\n";
+            }
+            break;
+
+        case 3:
+            cout << "You chose to View Inventory.\n";
+            cout << "Displaying items...\n";
+            break;
+
+        case 4:
+            cout << "Exiting program. Goodbye!\n";
+            break;
+
+        default:
+            cout << "Invalid choice! Please select a number between 1 and 4.\n";
+            break;
+    }
+
+    return 0;
+}

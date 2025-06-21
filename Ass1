@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << " Hello Inventory System!\n"; 
+
+    cout << "\nData Type Sizes:\n";
+    cout << "\int: " << sizeof(int) << " bytes\n";
+    cout << "\tfloat: " << sizeof(float) << " bytes\n";
+    cout << "\tchar: " << sizeof(char) << " bytes\n";
+
+    return 0;
+
+}
